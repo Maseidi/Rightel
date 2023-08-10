@@ -1,0 +1,37 @@
+.footer-menu {
+    div {
+      .footer-menu-column {
+        font-family: web;
+        line-height: 30px;
+        p {
+          font-weight: bold;
+          font-size: 13px;
+          color: #545054;
+          border-bottom: 2px solid #dbdbdc;
+        }
+        a {
+          color: #8e8a8a;
+          display: block;
+          text-decoration: none;
+          font-size: 12px;
+          font-weight: bold;
+          &:hover {
+            color: #8a256a;
+          }
+        }
+      }
+    }
+  }
+  
+  .hidden-link {
+    display: none !important;
+  }
+
+.social-media-link {
+    transition: 500ms;
+    position: relative;
+    display: block;
+    &:hover {
+        margin-top: -35px;
+    }
+}

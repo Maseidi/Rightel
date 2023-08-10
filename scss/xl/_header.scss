@@ -1,0 +1,94 @@
+li {
+    > a {
+        transition: 200ms;
+    }
+    > i {
+        transition: 200ms;
+    }
+    &:hover {
+        > a {
+            color: #902070 !important;
+            }
+        > i {
+            opacity: 1 !important;
+        }
+    }
+}
+
+.submenu-container-1, .submenu-container-2, .submenu-container-3, .submenu-container-4, .submenu-container-5, .submenu-container-6, .submenu-container-7 {
+    height: 67px;
+    background-color: #f6f6f6;
+    width: 83%;
+    top: 125px;
+    border: 1px solid #cccccc;
+    margin: 0px auto;
+    position: absolute;
+    z-index: 50;
+    visibility: hidden;
+    opacity: 0;
+    transition: 300ms;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 50px;
+    font-size: 11px;
+    padding-right: 20px;
+    a {
+        text-decoration: none;
+        display: block;
+        line-height: 67px;
+        height: 100%;
+        color: #505050;
+        &:hover {
+            color: #e77f2a;
+            + div {
+                visibility: visible !important;
+                opacity: 1 !important;
+            }
+        }
+    }
+    .submenu-content {
+        width: 100%;
+        height: auto;
+        background-color: white;
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        top: 66px;
+        left: 1.2%;
+        cursor: default;
+        border: 1px solid #cccccc;
+        transition: 300ms;
+        div {
+            padding: 25px 0px 25px 0px;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: start;
+            height: 100%;
+            p {
+                color: #e77f2a;
+                i {
+                    margin-left: 5px;
+                }
+            }
+            a {
+                margin-right: 25px;
+                font-family: web;
+                font-weight: 0 !important;
+                color: #505050;
+                font-size: 10px;
+                height: 40px;
+                line-height: 40px;
+                display: block;
+                &:hover {
+                    color: #e77f2a;
+                }    
+            }
+        }
+    }
+}
+
+.submenu-active {
+    visibility: visible !important;
+    opacity: 1 !important;
+}

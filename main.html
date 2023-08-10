@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رایتل</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./icons/css/all.css">
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon-96x96.png">
+</head>
+<body>
+    <!--Start header-->
+    <header>
+        <!--Titles and search-->
+        <div class="w-[100%] h-[51px] bg-[#c41482] user-select-none">
+            <a href="#" class="d-inline-block w-[104px] h-[31px] bg-[#ece8e9] text-decoration-none font-['web'] text-[9.7px] leading-[31px] text-[#000000] rounded-t-[5px] text-center 2xl:mr-[12.2%] xl:mr-[9.3%] lg:mr-[11%] md:mr-[12.3%] xs:mr-[10px] sm:mr-[10px] mt-[20px]">مشترکان شخصی</a>
+            <a href="#" class="d-inline-block w-[85px] h-[31px] text-decoration-none font-['web'] text-[9.7px] leading-[31px] text-[#ffff] rounded-t-[5px] text-center mt-[20px]">مشترکان سازمانی</a>
+            <span class="text-[#ffff] float-left text-[13px] 2xl:ml-[13.2%] xl:ml-[9.5%] lg:ml-[10.9%] md:ml-[14%] xs:ml-[25px] sm:ml-[25px] font-[boldFont] mt-[21px] cursor-pointer">EN</span>
+            <i class="fa-sharp fa-solid fa-pipe float-left text-[22px] text-[#d591be] ml-[8px] mt-[16px]"></i>
+            <i class="fa-regular fa-magnifying-glass text-[#ffff] float-left text-[13px] ml-[12px] mt-[22px] cursor-pointer"></i>
+        </div>
+        <!--Navbar and menu-->
+        <div class="w-[100%] h-[76px] md:h-[65px] sm:h-[65px] xs:h-[65px] bg-[#ece8e9]">
+            <img src="./images/1.png" alt="logo" class="2xl:h-[57.5%] xl:h-[57.5%] lg:h-[57.5%] md:h-[65%] sm:h-[52.5%] xs:h-[52.5%] 2xl:mr-[15px] xl:mr-[15px] lg:mr-[15px] md:mr-[0px] 2xl:float-right xl:float-right lg:float-right md:float-right sm:float-left xs:float-left mt-[17px] sm:ml-[15px] xs:ml-[15px] cursor-pointer">
+            <nav class="h-[100%] 2xl:w-[673px] xl:w-[673px] lg:w-[650px] md:w-[550px] 2xl:mr-[96px] xl:mr-[25px] lg:mr-[27px] md:mr-[20px] inline-block d-none d-md-inline-block">
+                <ul class="w-[auto] h-[100%] font-[boldFont] list-none flex flex-row flex-wrap justify-between 2xl:text-[13px] xl:text-[13px] lg:text-[13px] md:text-[11.3px] 2xl:pt-[34px] xl:pt-[34px] lg:pt-[34px] md:pt-[29px]">
+                    <li class="relative submenu-activator-1"><a href="#" class="cursor-pointer inline-block w-[auto] h-[auto] text-[#505050] text-decoration-none">محصولات</a>
+                        <i class="fa-solid fa-triangle absolute bottom-[-2px] text-[16px] text-[#f6f6f6] left-[50%] opacity-0"></i></li>
+                    <li class="relative submenu-activator-2"><a href="#" class="cursor-pointer inline-block w-[auto] h-[auto] text-[#505050] text-decoration-none">خدمات و سرگرمی</a>
+                        <i class="fa-solid fa-triangle absolute bottom-[-2px] text-[16px] text-[#f6f6f6] left-[50%] opacity-0"></i></li>
+                    <li class="relative submenu-activator-3"><a href="#" class="cursor-pointer inline-block w-[auto] h-[auto] text-[#505050] text-decoration-none">طرح‌ها و پیشنهاد‍‌ها</a>
+                        <i class="fa-solid fa-triangle absolute bottom-[-2px] text-[16px] text-[#f6f6f6] left-[50%] opacity-0"></i></li>
+                    <li class="relative submenu-activator-4"><a href="#" class="cursor-pointer inline-block w-[auto] h-[auto] text-[#505050] text-decoration-none">ثبت نام و خرید</a>
+                        <i class="fa-solid fa-triangle absolute bottom-[-2px] text-[16px] text-[#f6f6f6] left-[50%] opacity-0"></i></li>
+                    <li class="relative submenu-activator-5"><a href="#" class="cursor-pointer inline-block w-[auto] h-[auto] text-[#505050] text-decoration-none">رایتل من</a>
+                        <i class="fa-solid fa-triangle absolute bottom-[-2px] text-[16px] text-[#f6f6f6] left-[50%] opacity-0"></i></li>
+                    <li class="relative submenu-activator-6"><a href="#" class="cursor-pointer inline-block w-[auto] h-[auto] text-[#505050] text-decoration-none">درباره رایتل</a>
+                        <i class="fa-solid fa-triangle absolute bottom-[-2px] text-[16px] text-[#f6f6f6] left-[50%] opacity-0"></i></li>
+                    <li class="relative submenu-activator-7"><a href="#" class="cursor-pointer inline-block w-[auto] h-[auto] text-[#505050] text-decoration-none">پشتیبانی</a>
+                        <i class="fa-solid fa-triangle absolute bottom-[-2px] text-[16px] text-[#f6f6f6] left-[50%] opacity-0"></i></li>
+                    <div class="submenu-container-1">
+                        <a href="#">سیم کارت‌ها</a>
+                        <div class="submenu-content row" onmouseover="maintain(this)" onmouseleave="lose(this)">
+                            <div class="col-md-6">
+                                <a href="#">دائمی</a>
+                                <a href="#">اعتباری</a>
+                                <a href="#">تبدیل سیم‌کارت</a>
+                                <a href="#">سیم کارت هدیه</a>
+                            </div>
+                        </div>
+                        <a href="#">سایر</a>
+                        <div class="submenu-content row" onmouseover="maintain(this)" onmouseleave="lose(this)">
+                            <div class="col-md-6">
+                                <a href="#">آنتی ویروس</a>
+                                <a href="#">کد ارغوان</a>
+                                <a href="#">کارت شارژ</a>
+                                <a href="#">رایکارت/رایکد</a>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="submenu-container-2">
+                        <a href="#">خدمات ارتباطی</a>
+                        <div class="submenu-content row" onmouseover="maintain(this)" onmouseleave="lose(this)">
+                            <div class="col-md-3">
+                                <p><i class="fa-solid fa-chevron-left"></i> خدمات صوتی</p>
+                                <a href="#">راینواز</a>
+                                <a href="#">سرویس تماس از دست رفته</a>
+                                <a href="#">کنفرانس تلفنی</a>
+                                <a href="#">مدیریت تماس</a>
+                                <a href="#">بازتماس</a>
+                            </div>
+                            <div class="col-md-3">
+                                <p><i class="fa-solid fa-chevron-left"></i> خدمات کاربردی</p>
+                                <a href="#">مدیریت خدمات پیامکی</a>
+                                <a href="#">ردیابی دستگاه مفقودی</a>
+                                <a href="#">سرویس کودک و نوجوان</a>
+                                <a href="#">گزارش تماس</a>
+                                <a href="#">کد های دستوری</a>
+                            </div>
+                            <div class="col-md-3">
+                                <p><i class="fa-solid fa-chevron-left"></i> خدمات شارژ و پرداخت</p>
+                                <a href="#">معرفی سرویس خرید شارژ مستقیم از طریق وبسایت رایتل</a>
+                            </div>
+                        </div>
+                        <a href="#">خدمات نوین</a>
+                        <div class="submenu-content row" onmouseover="maintain(this)" onmouseleave="lose(this)">
+                            <div class="col-md-3">
+                                <p><i class="fa-solid fa-chevron-left"></i>آموزش</p>
+                                <a href="#">مدرسه آنلاین آلاء</a>
+                            </div>
+                            <div class="col-md-3">
+                                <p><i class="fa-solid fa-chevron-left"></i>ویدیو</p>
+                                <a href="#">گپ فیلم</a>
+                                <a href="#">مایکت</a>
+                                <a href="#">دیجیتون</a>
+                                <a href="#">آفرینک</a>
+                                <a href="#">پیشتاز مووی</a>
+                            </div>
+                            <div class="col-md-3">
+                                <p><i class="fa-solid fa-chevron-left"></i>پیامکی</p>
+                                <a href="#">سرویس های دولت الکترونیک</a>
+                            </div>
+                            <div class="col-md-3">
+                                <p><i class="fa-solid fa-chevron-left"></i>جشنواره و جوایز</p>
+                                <a href="#">جشنواره های ویژه</a>
+                                <a href="#">اسامی برندگان</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submenu-container-3">
+                        <a href="#">مشترک جدید</a>
+                        <div class="submenu-content row" onmouseover="maintain(this)" onmouseleave="lose(this)">
+                            <div class="col-md-3">
+                                <p><i class="fa-solid fa-chevron-left"></i>سیم کارت دایمی</p>
+                                <a href="#">خرید سیم‌کارت دایمی X10 و X50</a>
+                            </div>
+                            <div class="col-md-3">
+                                <p><i class="fa-solid fa-chevron-left"></i>سیم کارت اعتباری</p>
+                                <a href="#">سیم کارت اعتباری طرح انرژی</a>
+                                <a href="#">طرح جوان</a>
+                            </div>
+                            <div class="col-md-3">
+                                <p><i class="fa-solid fa-chevron-left"></i>حراج شماره های رند</p>
+                                <a href="#">پرتال حراج شماره های رند</a>
+                                <a href="#">معرفی طرح حراج شماره های رند</a>
+                            </div>
+                        </div>
+                        <a href="#">بسته ها</a>
+                        <div class="submenu-content row" onmouseover="maintain(this)" onmouseleave="lose(this)">
+                            <div class="col-md-6">
+                                <a href="#">بسته های اینترنت</a>
+                                <a href="#">بسته های دکا</a>
+                                <a href="#">بسته های رایتا</a>
+                                <a href="#">بسته های مکالمه</a>
+                                <a href="#">بسته های پیامکی</a>
+                            </div>
+                        </div>
+                        <a href="#">پیشنهاد‌های ویژه</a>
+                        <div class="submenu-content row" onmouseover="maintain(this)" onmouseleave="lose(this)">
+                            <div class="col-md-6">
+                                <a href="#">بسته دست دوز</a>
+                                <a href="#">فرصت های ارغوانی</a>
+                                <a href="#">روز های رایتلی</a>
+                                <a href="#">هدیه تولد</a>
+                                <a href="#">طرح شارژ شورانگیز</a>
+                                <a href="#">طرح اربعین</a>
+                            </div>
+                        </div>
+                        <a href="#">تعرفه ها</a>
+                        <div class="submenu-content row" onmouseover="maintain(this)" onmouseleave="lose(this)">
+                            <div class="col-md-6">
+                                <a href="#">تعرفه خدمات</a>
+                                <a href="#">رومینگ بین الملل</a>
+                                <a href="#">مکالمات و پیامک بین الملل</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submenu-container-4">
+                        <a href="#">ثبت نام</a>
+                        <div class="submenu-content row" onmouseover="maintain(this)" onmouseleave="lose(this)">
+                            <div class="col-md-6">
+                                <a href="#">ثبت نام و خرید سیم کارت</a>
+                                <a href="#">راهنمای ثبت نام و خرید</a>
+                            </div>
+                        </div>
+                        <a href="#">ترابرد</a>
+                        <div class="submenu-content row" onmouseover="maintain(this)" onmouseleave="lose(this)">
+                            <div class="col-md-6">
+                                <a href="#">ثبت نام ترابرد</a>
+                                <a href="#">پیگیری ترابرد</a>
+                                <a href="#">لغو ترابرد</a>
+                                <a href="#">راهنمای ترابرد پذیری شماره</a>
+                            </div>
+                        </div>
+                        <a href="#">امور نمایندگی ها</a>
+                        <div class="submenu-content row" onmouseover="maintain(this)" onmouseleave="lose(this)">
+                            <div class="col-md-6">
+                                <a href="#">ورود نمایندگان</a>
+                                <a href="#">اعطای نمایندگی</a>
+                                <a href="#">لینک های کاربردی نمایندگان</a>
+                            </div>
+                        </div>
+                        <a href="#">مراکز توزیع و فروش</a>
+                        <div class="submenu-content row" onmouseover="maintain(this)" onmouseleave="lose(this)">
+                            <div class="col-md-6">
+                                <a href="#">فروشگاه ها و نمایندگی های رایتل</a>
+                                <a href="#">نمایندگان فروش و خدمات</a>
+                                <a href="#">باجه های موقت نمایندگان رایتل</a>
+                                <a href="#">توزیع کنندگان رایتل</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submenu-container-5">
+                        <a href="#">پرداخت قبض</a>
+                        <div class="submenu-content row" onmouseover="maintain(this)" onmouseleave="lose(this)">
+                            <div class="col-md-6">
+                                <a href="#">پرداخت صورتحساب</a>
+                            </div>
+                        </div>
+                        <a href="#">خرید شارژ</a>
+                        <div class="submenu-content row" onmouseover="maintain(this)" onmouseleave="lose(this)">
+                            <div class="col-md-3">
+                                <p><i class="fa-solid fa-chevron-left"></i>شارژ</p>
+                                <a href="#">خرید شارژ شورانگیز</a>
+                                <a href="#">خرید شارژ مستقیم</a>
+                                <a href="#">خرید کارت شارژ</a>
+                            </div>
+                            <div class="col-md-3">
+                                <p><i class="fa-solid fa-chevron-left"></i>بسته</p>
+                                <a href="#">خرید بسته</a>
+                            </div>
+                        </div>
+                        <a href="#">رایتل من</a>
+                        <div class="submenu-content row" onmouseover="maintain(this)" onmouseleave="lose(this)">
+                            <div class="col-md-6">
+                                <a href="#">دانلود رایتل من</a>
+                                <a href="#">ورود به رایتل من</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submenu-container-6">
+                        <a href="#">رویدادها</a>
+                        <div class="submenu-content row" onmouseover="maintain(this)" onmouseleave="lose(this)">
+                            <div class="col-md-6">
+                                <a href="#">رویداد ها</a>
+                            </div>
+                        </div>
+                        <a href="#">اخبار</a>
+                        <div class="submenu-content row" onmouseover="maintain(this)" onmouseleave="lose(this)">
+                            <div class="col-md-6">
+                                <a href="#">اخبار سازمانی</a>
+                            </div>
+                        </div>
+                        <a href="#">معرفی رایتل</a>
+                        <div class="submenu-content row" onmouseover="maintain(this)" onmouseleave="lose(this)">
+                            <div class="col-md-6">
+                                <a href="#">درباره‌ی ما</a>
+                            </div>
+                        </div>
+                        <a href="#">همکاری با رایتل</a>
+                        <div class="submenu-content row" onmouseover="maintain(this)" onmouseleave="lose(this)">
+                            <div class="col-md-6">
+                                <a href="#">مشاغل مورد نیاز</a>
+                                <a href="#">نصب دکل مخابراتی</a>
+                                <a href="#">ویرایش اطلاعات تقاضای همکاری</a>
+                                <a href="#">رهگیری تقاضای همکاری</a>
+                                <a href="#">لوگوی رایتل</a>
+                                <a href="#">ارتباط با تامین کنندگان</a>
+                            </div>
+                        </div>
+                        <a href="#">تماس با رایتل</a>
+                        <div class="submenu-content row" onmouseover="maintain(this)" onmouseleave="lose(this)">
+                            <div class="col-md-6">
+                                <a href="#">راه های تماس با رایتل</a>
+                                <a href="#">نظرات و پیشنهادات</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submenu-container-7">
+                        <a href="#">مشترکین</a>
+                        <div class="submenu-content row" onmouseover="maintain(this)" onmouseleave="lose(this)">
+                            <div class="col-md-6">
+                                <a href="#">استعلام وضعیت سیم‌کارت</a>
+                                <a href="#">رهگیری مرسوله پستی</a>
+                                <a href="#">رسیدگی به مزاحمت تلفنی</a>
+                                <a href="#">انتقال مالکیت</a>
+                                <a href="#">تعویض سیم‌ کارت</a>
+                                <a href="#">پرسش‌های متداول</a>
+                                <a href="#">راهنمای استفاده از کد ارغوان</a>
+                            </div>
+                        </div>
+                        <a href="#">تنظیمات</a>
+                        <div class="submenu-content row" onmouseover="maintain(this)" onmouseleave="lose(this)">
+                            <div class="col-md-3">
+                                <p><i class="fa-solid fa-chevron-left"></i>تنظیمات گوشی و تبلت</p>
+                                <a href="#">راهنمای اتصال به شبکه رایتل</a>
+                                <a href="#">فعال‌سازی و غیرفعال‌سازی دیتا</a>
+                                <a href="#">راهنمای تنظیمات اینترنت</a>
+                                <a href="#">راهنمای پیام چند رسانه ای MMS</a>
+                                <a href="#">راهنمای غیر فعال کردن پین کد</a>
+                                <a href="#">راهنمای تنظیمات IPv6</a>
+                            </div>
+                            <div class="col-md-3">
+                                <p><i class="fa-solid fa-chevron-left"></i>استفاده از مودم</p>
+                                <a href="#">استفاده از دانگل</a>
+                                <a href="#">استفاده از رای فای</a>
+                                <a href="#">استفاده از روتر</a>
+                            </div>
+                            <div class="col-md-3">
+                                <p><i class="fa-solid fa-chevron-left"></i>تنظیمات رومینگ</p>
+                                <a href="#">فعالسازی و غیر‌فعالسازی رومینگ</a>
+                                <a href="#">فعال / غیر فعال سازی دیتای رومینگ</a>
+                                <a href="#">فعال / غیر فعال سازی رومینگ پرواز</a>
+                            </div>
+                        </div>
+                    </div>    
+                </ul>
+            </nav>
+            <button class="bg-[#c4d94c] hover:bg-[#b6cf3c] rounded-[4px] text-[#505050] border-none font-['boldFont'] 2xl:text-[13px] xl:text-[13px] lg:text-[13px] md:text-[11.3px] 2xl:w-[98px] xl:w-[98px] lg:w-[98px] md:w-[85px] 2xl:h-[44px] xl:h-[44px] lg:h-[44px] md:h-[33px] float-left mt-[21px] 2xl:ml-[12.1%] xl:ml-[8.1%] lg:ml-[9.5%] md:ml-[0px] d-none d-md-block">ترابرد به رایتل</button>
+            <div class="w-[26px] h-[18px] d-md-none d-block right-[20px] top-[22px] cursor-pointer menuBar relative z-[100]">
+                <div class="w-[100%] h-1/5 bg-[#ac3785] first-bar"></div>
+                <div class="w-[100%] h-1/5"></div>
+                <div class="w-[100%] h-1/5 bg-[#ac3785] transition-[300ms] second-bar"></div>
+                <div class="w-[100%] h-1/5"></div>
+                <div class="w-[100%] h-1/5 bg-[#ac3785] third-bar"></div>
+            </div>
+        </div>
+        <div class="loading bg-[white] h-[5px] w-100 d-md-none">
+            <div class="bg-[#d4d3d3] h-100 float-left"></div>
+        </div>
+        <!--Start menu for small screens-->
+        <div class="small-menu-cover w-[100%] h-[100vh] bg-[black] opacity-[0.5] absolute top-0 left-0 z-50 hidden md:hidden lg:hidden xl:hidden 2xl:hidden"></div>
+        <div class="small-menu xs:w-[70%] sm:w-[50%] md:hidden lg:hidden xl:hidden 2xl:hidden sm:block xs:block h-[100vh] bg-[white] absolute top-0 right-[-70%] z-[100] shadow select-none">
+            <div class="small-menu-icon w-[100%] h-[70px] xs:h-[63px]">
+                <img src="./images/1.png" alt="icon">
+            </div>
+            <div class="small-menu-content overflow-auto">
+                <div class="small-menu-title font-['web']">
+                    <p>محصولات</p>
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div class="small-menu-subtitle" id="small-menu-subtitle-1">
+                    <div class="subtitle-content">
+                        <p>سیم کارت ها</p>
+                    <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="small-menu-options">
+                        <a href="#">دائمی</a>
+                        <a href="#">اعتباری</a>
+                        <a href="#">تبدیل سیم‌کارت</a>
+                        <a href="#">سیم کارت هدیه</a>
+                    </div>
+                    <div class="subtitle-content">
+                        <p>سایر</p>
+                    <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="small-menu-options">
+                        <a href="#">آنتی ویروس</a>
+                        <a href="#">کد ارغوان</a>
+                        <a href="#">کارت شارژ</a>
+                        <a href="#">رایکارت/رایکد</a>
+                    </div>
+                </div>
+                <div class="small-menu-title font-['web']">
+                    <p>خدمات و سرگرمی</p>
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div class="small-menu-subtitle">
+                    <div class="subtitle-content">
+                        <p>خدمات ارتباطی</p>
+                    <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="small-menu-options">
+                        <p>&#x25CF خدمات صوتی</p>
+                        <a href="#">راینواز</a>
+                        <a href="#">سرویس تماس از دست رفته</a>
+                        <a href="#">کنفرانس تلفنی</a>
+                        <a href="#">مدیریت تماس</a>
+                        <a href="#">بازتماس</a>
+                        <p>&#x25CF خدمات کاربردی</p>
+                        <a href="#">مدیریت خدمات پیامکی</a>
+                        <a href="#">ردیابی دستگاه مفقودی</a>
+                        <a href="#">سرویس کودک و نوجوان</a>
+                        <a href="#">گزارش تماس</a>
+                        <a href="#">کدهای دستوری</a>
+                        <p>&#x25CF شارژ و پرداخت</p>
+                        <a href="#">معرفی سرویس خرید شارژ مستقيم از طريق وب‎سايت رايتل</a>
+                    </div>
+                    <div class="subtitle-content">
+                        <p>خدمات نوین</p>
+                    <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="small-menu-options">
+                        <p>&#x25CF آموزش</p>
+                        <a href="#">مدرسه آنلاین آلاء</a>
+                        <p>&#x25CF ویدیو</p>
+                        <a href="#">گپ فیلم</a>
+                        <a href="#">مایکت</a>
+                        <a href="#">دیجیتون</a>
+                        <a href="#">آفرینک</a>
+                        <a href="#">پیشتاز مووی</a>
+                        <p>&#x25CF پیامکی</p>
+                        <a href="#">سرویس های دولت الکترونیک</a>
+                        <p>&#x25CF جشنواره و جوایز</p>
+                        <a href="#">جشنواره های ویژه</a>
+                        <a href="#">اسامی برندگان</a>
+                    </div>
+                </div>
+                <div class="small-menu-title font-['web']">
+                    <p>طرح‌ها و پیشنهادها</p>
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div class="small-menu-subtitle">
+                    <div class="subtitle-content">
+                        <p>مشترک جدید</p>
+                    <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="small-menu-options">
+                        <p>&#x25CF سیم کارت دایمی</p>
+                        <a href="#">خرید سیم کارت دائمی X10 و X50</a>
+                        <p>&#x25CF سیم کارت اعتباری</p>
+                        <a href="#">سیم کارت اعتباری طرح انرژی</a>
+                        <a href="#">طرح جوان</a>
+                        <p>&#x25CF حراج شماره های رند</p>
+                        <a href="#">پرتال حراج شماره های رند</a>
+                        <a href="#">معرفی طرح حراج شماره های رند</a>
+                    </div>
+                    <div class="subtitle-content">
+                        <p>بسته ها</p>
+                    <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="small-menu-options">
+                        <a href="#">بسته های اینترنت</a>
+                        <a href="#">بسته های دکا</a>
+                        <a href="#">بسته های رایتا</a>
+                        <a href="#">بسته های مکالمه</a>
+                        <a href="#">بسته های پیامکی</a>
+                    </div>
+                    <div class="subtitle-content">
+                        <p>پیشنهاد‌های ویژه</p>
+                    <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="small-menu-options">
+                        <a href="#">بسته دست دوز</a>
+                        <a href="#">فرصت های ارغوانی</a>
+                        <a href="#">روز های رایتلی</a>
+                        <a href="#">هدیه تولد</a>
+                        <a href="#">طرح شارژ شورانگیز</a>
+                        <a href="#">طرح ویژه اربعین</a>
+                    </div>
+                    <div class="subtitle-content">
+                        <p>تعرفه ها</p>
+                    <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="small-menu-options">
+                        <a href="#">تعرفه خدمات</a>
+                        <a href="#">رومینگ بین الملل</a>
+                        <a href="#">مکالمات و پیامک بین‌الملل</a>
+                    </div>
+                </div>
+                <div class="small-menu-title font-['web']">
+                    <p>ثبت نام و خرید</p>
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div class="small-menu-subtitle">
+                    <div class="subtitle-content">
+                        <p>ثبت نام</p>
+                    <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="small-menu-options">
+                        <a href="#">ثبت نام و خرید سیم کارت</a>
+                        <a href="#">راهنمای ثبت نام و خرید</a>
+                    </div>
+                    <div class="subtitle-content">
+                        <p>ترابرد</p>
+                    <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="small-menu-options">
+                        <a href="#">ثبت نام ترابرد</a>
+                        <a href="#">پیگیری ترابرد</a>
+                        <a href="#">لغو ترابرد</a>
+                        <a href="#">راهنمای ترابرد پذیری شماره</a>
+                    </div>
+                    <div class="subtitle-content">
+                        <p>امور نمایندگی ها</p>
+                    <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="small-menu-options">
+                        <a href="#">ورود نمایندگان</a>
+                        <a href="#">اعطای نمایندگی</a>
+                        <a href="#">لینک های کاربردی نمایندگان</a>
+                    </div>
+                    <div class="subtitle-content">
+                        <p>مراکز توزیع و فروش</p>
+                    <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="small-menu-options">
+                        <a href="#">فروشگاه ها و نمایندگی های رایتل</a>
+                        <a href="#">نمایندگان فروش و خدمات</a>
+                        <a href="#">باجه های موقت نمایندگان رایتل</a>
+                        <a href="#">توزیع کنندگان رایتل</a>
+                    </div>
+                </div>
+                <div class="small-menu-title font-['web']">
+                    <p>رایتل من</p>
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div class="small-menu-subtitle">
+                    <div class="subtitle-content">
+                        <p>پرداخت قبض</p>
+                    <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="small-menu-options">
+                        <a href="#">پرداخت صورتحساب</a>
+                    </div>
+                    <div class="subtitle-content">
+                        <p>خرید شارژ</p>
+                    <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="small-menu-options">
+                        <p>&#x25CF شارژ</p>
+                        <a href="#">خرید شارژ شورانگیز</a>
+                        <a href="#">خرید شارژ مستقیم</a>
+                        <a href="#">خرید کارت شارژ</a>
+                        <p>&#x25CF بسته</p>
+                        <a href="#">خرید بسته</a>
+                    </div>
+                    <div class="subtitle-content">
+                        <p>رایتل من</p>
+                    <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="small-menu-options">
+                        <a href="#">دانلود رایتل من</a>
+                        <a href="#">ورود به رایتل من</a>
+                    </div>
+                </div>
+                <div class="small-menu-title font-['web']">
+                    <p>درباره رایتل</p>
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div class="small-menu-subtitle">
+                    <div class="subtitle-content">
+                        <p>رویدادها</p>
+                    <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="small-menu-options">
+                        <a href="#">رویدادها</a>
+                    </div>
+                    <div class="subtitle-content">
+                        <p>اخبار</p>
+                    <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="small-menu-options">
+                        <a href="#">اخبار سازمانی</a>
+                    </div>
+                    <div class="subtitle-content">
+                        <p>معرفی رایتل</p>
+                    <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="small-menu-options">
+                        <a href="#">درباره ما</a>
+                    </div>
+                    <div class="subtitle-content">
+                        <p>همکاری با رایتل</p>
+                    <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="small-menu-options">
+                        <a href="#">مشاغل مورد نیاز</a>
+                        <a href="#">نصب دکل مخابراتی</a>
+                        <a href="#">ویرایش اطلاعات تقاضای همکاری</a>
+                        <a href="#">رهگیری تقاضای همکاری</a>
+                        <a href="#">لوگوی رایتل</a>
+                        <a href="#">ارتباط با تامین کنندگان</a>
+                    </div>
+                    <div class="subtitle-content">
+                        <p>تماس با رایتل</p>
+                    <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="small-menu-options">
+                        <a href="#">راه‌های تماس با رایتل</a>
+                        <a href="#">نظرات و پیشنهادات</a>
+                    </div>
+                </div>
+                <div class="small-menu-title font-['web']">
+                    <p>پشتیبانی</p>
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div class="small-menu-subtitle">
+                    <div class="subtitle-content">
+                        <p>مشترکین</p>
+                    <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="small-menu-options">
+                        <a href="#">استعلام وضعیت سیم‌کارت</a>
+                        <a href="#">رهگیری مرسوله پستی</a>
+                        <a href="#">رسیدگی به مزاحمت تلفنی</a>
+                        <a href="#">انتقال مالکیت</a>
+                        <a href="#">تعویض سیم کارت</a>
+                        <a href="#">پرسش‌های متداول</a>
+                        <a href="#">راهنمای استفاده از کد ارغوان</a>
+                    </div>
+                    <div class="subtitle-content">
+                        <p>تنظیمات</p>
+                    <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="small-menu-options">
+                        <p>&#x25CF تنظیمات گوشی و تبلت</p>
+                        <a href="#">راهنمای اتصال به شبکه رایتل</a>
+                        <a href="#">فعال‌سازی و غیرفعال‌سازی دیتا</a>
+                        <a href="#">راهنمای تنظیمات اینترنت</a>
+                        <a href="#">راهنمای پیام چند رسانه‌ای MMS</a>
+                        <a href="#">راهنمای غیر فعال کردن پین کد</a>
+                        <a href="#">راهنمای تنظیمات IPv6</a>
+                        <p>&#x25CF استفاده از مودم</p>
+                        <a href="#">استفاده از دانگل</a>
+                        <a href="#">استفاده از رای فای</a>
+                        <a href="#">استفاده از روتر</a>
+                        <p>&#x25CF تنظیمات رومینگ</p>
+                        <a href="#">فعالسازی و غیرفعالسازی رومینگ</a>
+                        <a href="#">فعال / غیرفعال سازی دیتای رومینگ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Start main-->
+    <main>
+        <!--Start slider section-->
+        <section class="w-[100%] h-[520px] xs:h-[390px] sm:h-[425px]">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./images/2.jpg" alt="first"></div>
+                  <div class="swiper-slide"><img src="./images/3.jpg" alt="second"></div>
+                  <div class="swiper-slide"><img src="./images/4.jpg" alt="third"></div>
+                  <div class="swiper-slide"><img src="./images/5.jpg" alt="fourth"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </section>
+
+        <!--Start items section-->    
+        <section class="items w-[100%] 2xl:h-[155px] xl:h-[155px] lg:h-[190px] user-select-none">
+            <div class="2xl:w-[73%] xl:w-[90%] h-[100%] mx-auto d-xl-flex flex-row flex-wrap justify-around d-none">
+                <a href="#">
+                    <img class="block" src="./images/13.png" alt="sign up">
+                    <span>ثبت نام و خرید سیم کارت</span>
+                </a>
+                <a href="#">
+                    <img class="block" src="./images/12.png" alt="credit">
+                    <span>افزایش اعتبار</span>
+                </a>
+                <a href="#">
+                    <img class="block" src="./images/10.png" alt="pay">
+                    <span>پرداخت صورت حساب</span>
+                </a>
+                <a href="#">
+                    <img class="block" src="./images/11.png" alt="purchase">
+                    <span>خرید بسته</span>
+                </a>
+                <a href="#">
+                    <img class="block" src="./images/9.png" alt="my Rightel">
+                    <span>رایتل من</span>
+                </a>
+                <a href="#">
+                    <img class="block" src="./images/8.png" alt="post">
+                    <span>رهگیری مرسوله پستی</span>
+                </a>
+                <a href="#">
+                    <img class="block" src="./images/7.png" alt="areas">
+                    <span>نواحی تحت پوشش</span>
+                </a>
+                <a href="#">
+                    <img class="block" src="./images/6.png" alt="international">
+                    <span>رومینگ بین الملل</span>
+                </a>
+            </div>
+            <div class="items-lg h-[100%] d-none d-lg-block d-xl-none mx-auto">
+                <div class="slider-lg">
+                    <div class="changer">
+                        <a href="#">
+                            <img class="block" src="./images/13.png" alt="sign up">
+                            <span>ثبت نام و خرید سیم کارت</span>
+                        </a>
+                        <a href="#">
+                            <img class="block" src="./images/12.png" alt="credit">
+                            <span>افزایش اعتبار</span>
+                        </a>
+                        <a href="#">
+                            <img class="block" src="./images/10.png" alt="pay">
+                            <span>خرید بسته</span>
+                        </a>
+                        <a href="#">
+                            <img class="block" src="./images/11.png" alt="purchase">
+                            <span>پرداخت صورت حساب</span>
+                        </a>
+                        <a href="#">
+                            <img class="block" src="./images/9.png" alt="my Rightel">
+                            <span>رایتل من</span>
+                        </a>
+                        <a href="#">
+                            <img class="block" src="./images/8.png" alt="post">
+                            <span>رهگیری مرسوله پستی</span>
+                        </a>
+                        <a href="#">
+                            <img class="block" src="./images/7.png" alt="areas">
+                            <span>نواحی تحت پوشش</span>
+                        </a>
+                        <a href="#">
+                            <img class="block" src="./images/6.png" alt="international">
+                            <span>رومینگ بین الملل</span>
+                        </a>
+                        <a href="#">
+                            <img class="block" src="./images/13.png" alt="sign up">
+                            <span>ثبت نام و خرید سیم کارت</span>
+                        </a>
+                        <a href="#">
+                            <img class="block" src="./images/12.png" alt="credit">
+                            <span>افزایش اعتبار</span>
+                        </a>
+                        <a href="#">
+                            <img class="block" src="./images/10.png" alt="pay">
+                            <span>خرید بسته</span>
+                        </a>
+                        <a href="#">
+                            <img class="block" src="./images/11.png" alt="purchase">
+                            <span>پرداخت صورت حساب</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <div class="prev">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>         
+                <div class="pagination-lg">
+                    <button class="btn-1 active"></button>
+                    <button class="btn-2"></button>
+                    <button class="btn-3"></button>
+                    <button class="btn-4"></button>
+                </div>
+            </div>
+            <div class="items-xs h-[100%] md:w-[87%] sm:w-[92%] xs:w-[97%] d-block d-lg-none mx-auto">
+                <div class="slider-xs">
+                        <div class="first-slide w-[100%] h-[100%]">
+                            <a href="#">
+                                <img class="block" src="./images/13.png" alt="sign up">
+                                <span>ثبت نام و خرید سیم کارت</span>
+                            </a>
+                            <a href="#">
+                                <img class="block" src="./images/12.png" alt="credit">
+                                <span>افزایش اعتبار</span>
+                            </a>
+                            <a href="#">
+                                <img class="block" src="./images/10.png" alt="pay">
+                                <span>خرید بسته</span>
+                            </a>
+                            <a href="#">
+                                <img class="block" src="./images/11.png" alt="purchase">
+                                <span>پرداخت صورت حساب</span>
+                            </a>
+                        </div>
+                        <div class="second-slide w-[100%] h-[100%]">
+                            <a href="#">
+                                <img class="block" src="./images/9.png" alt="my Rightel">
+                                <span>رایتل من</span>
+                            </a>
+                            <a href="#">
+                                <img class="block" src="./images/8.png" alt="post">
+                                <span>رهگیری مرسوله پستی</span>
+                            </a>
+                            <a href="#">
+                                <img class="block" src="./images/7.png" alt="areas">
+                                <span>نواحی تحت پوشش</span>
+                            </a>
+                            <a href="#">
+                                <img class="block" src="./images/6.png" alt="international">
+                                <span>رومینگ بین الملل</span>
+                            </a>
+                        </div>   
+                </div>      
+                <div class="pagination-xs">
+                    <button class="btn-5 active"></button>
+                    <button class="btn-6"></button>
+                </div>
+            </div>
+        </section>
+        <div class="w-[100%] h-[5px] bg-[#e8e7e7]"></div>
+
+        <!--Start special offers section-->
+        <section class="font-['web'] text-center text-[14px] user-select-none">
+            <p class="mt-[50px] font-bold text-[19px]">پیشنهاد‌های ویژه</p>
+            <div class="w-[200px] h-[25px] mx-auto leading-[25px] flex items-center justify-between">
+                <span class="text-[#902070] font-semibold">ویژه</span>
+                <div class="w-[2px] h-[50%] bg-[#b19999]"></div>
+                <span class="text-[#999999] cursor-pointer hover:text-[#902070] hover:font-bold">خدمات ارتباطی نوین</span>
+            </div>
+            <div class="specialOffers 2xl:w-[75%] xl:w-[85%] lg:w-[90%] md:w-[75%] sm:w-[85%] xs:w-[95%] mx-auto mt-[30px] flex flex-row flex-wrap justify-between text-[white] text-[15px] md:text-[11px] sm:text-[10px] xs:text-[10px]">
+                <div class="offer">
+                    <img src="./images/24.jpg" alt="app">
+                    <div class="sub">
+                        <span>اپلیکیشن "رایتل من"</span>
+                    </div>
+                    <div class="dark"></div>
+                    <div class="arrow">
+                        <i class="fa-regular fa-arrow-left"></i>
+                    </div>
+                </div>
+                <div class="offer">
+                    <img src="./images/23.jpg" alt="10 times">
+                    <div class="sub">
+                        <span>سیم کارت دائمی + تا 50 گیگ اینترنت</span>
+                    </div>
+                    <div class="dark"></div>
+                    <div class="arrow">
+                        <i class="fa-regular fa-arrow-left"></i>
+                    </div>
+                </div>
+                <div class="offer sm:mt-[20px] xs:mt-[20px]">
+                    <img src="./images/22.jpg" alt="energy">
+                    <div class="sub">
+                        <span>سیم کارت های انرژی</span>
+                    </div>
+                    <div class="dark"></div>
+                    <div class="arrow">
+                        <i class="fa-regular fa-arrow-left"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--Start compatibility section-->
+        <section>
+            <div class="exchange w-[100%] h-[300px] sm:h-[255px] xs:h-[265px] mt-[50px] pr-[51%] lg:pr-[51%] md:pr-[39%] sm:pr-[15px] xs:pr-[15px]">
+                <div class="2xl:w-[75%] xl:w-[85%] lg:w-[95%] md:w-[82%] sm:w-[96%] xs:w-[96%] h-[100%] font-['web'] text-[white] text-[13px] pt-[50px] sm:pt-[30px] xs:pt-[25px]">
+                    <p class="mb-1">ترابرد پذیری</p>
+                    <p class="mb-4 text-[22.5px] text-[#bdd642] font-bold">ترابرد شماره به رایتل</p>
+                    <p class="leading-[23px]">شما می‌توانید از طریق این سامانه نسبت به ثبت‌ درخواست ترابرد شماره تلفن همراه خود به رایتل اقدام نمایید. پس از ثبت‌نام و تکمیل فرآیند ترابرد، امکان بهره‌مندی از خدمات نوین ارتباطی اپراتور پیشگام بدون تغییر شماره، برای شما فراهم می‌گردد..</p>
+                    <button class="w-[48%] h-[40px] leading-[40px] text-[white] bg-[#841860] hover:bg-[#701953] hover:shadow border-none font-bold rounded-[5px] cursor-pointer">راهنمای ترابرد شماره رایتل</button>
+                    <button class="w-[48%] h-[40px] leading-[40px] bg-[#bdd632] hover:bg-[#a8be2c] font-bold mr-[10px] border-none rounded-[5px] cursor-pointer">درخواست ترابرد شماره</button>
+                </div>
+            </div>
+        </section>
+
+        <!--Start android and web application section-->
+        <section class="app font-['web'] pt-[20px] bg-[#ededed] select-none padding-b-1">
+            <div class="app-title-container w-[100%] text-center font-bold">
+                <p class="app-title text-[21px]">رایتل من</p>
+            </div>
+            <div class="app-options w-[100%] h-[40px] flex justify-center items-center gap-[5px]">
+                <div class="app-option w-[30%] chosen first-option">
+                    <p class="app-option-title">
+                        موبایل
+                    </p>
+                </div>
+                <div class="app-option w-[30%] second-option">
+                    <p class="app-option-title">
+                        وب سایت
+                    </p>
+                </div>
+            </div>
+            <div class="app-content flex 2xl:flex-row xl:flex-row lg:flex-row md:flex-row sm:flex-col xs:flex-col gap-[5px]">
+                <div class="app-picture-container w-[50%] sm:w-[100%] xs:w-[100%] h-[500px] sm:h-[300px] xs:h-[300px] sm:hidden xs:hidden">
+                    <img class="app-picture1" src="./images/26.png" alt="mobile">
+                    <img class="app-picture2 hidden" src="./images/27.png" alt="web-app">
+                </div>
+                <div class="app-features w-[50%] sm:w-[100%] xs:w-[100%] h-[500px] sm:h-[350px] xs:h-[350px] flex flex-col justify-center items-start gap-[20px] pr-[20px] sm:mt-[50px] xs:mt-[50px]">
+                    <div class="app-feature">
+                        <div>
+                            <img src="./images/28.png" alt="package">
+                        </div>                            
+                        <div>
+                            <p>خرید بسته</p>
+                        </div>
+                    </div>
+                    <div class="app-feature">
+                        <div>
+                            <img src="./images/29.png" alt="credit">
+                        </div>                            
+                        <div>
+                            <p>افزایش اعتبار</p>
+                        </div>
+                    </div>
+                    <div class="app-feature">
+                        <div>
+                            <img src="./images/30.png" alt="management">
+                        </div>                            
+                        <div>
+                            <p>مدیریت سیم‌کارت‌ها</p>
+                        </div>
+                    </div>
+                    <button class="app-download-btn bg-[#bdd632] text-[white] h-[40px] border-none rounded-[5px] text-[14px] font-bold">دانلود نسخه Android</button>
+                </div>
+            </div>
+        </section>
+
+        <!--Start package section-->
+        <section class="package w-[100%] 2xl:h-[300px] xl:h-[260px] lg:h-[220px] md:h-[180px] sm:h-[140px] xs:h-[100px]">
+            <a class="w-[100%] h-[100%] block" href="#">
+                <img class="object-cover h-[100%] w-[100%]" src="./images/31.jpg" alt="scissors">
+            </a>
+        </section>
+
+        <!--Start news section-->
+        <section class="news bg-[#f1f1f1] w-[100%] h-[400px] pt-[80px] font-['web'] select-none">
+            <div class="w-[80px] h-[80px] rounded-[50%] bg-[#e2e2e2] mx-auto text-[white] leading-[80px] text-center text-[40px]">
+                <i class="fa-solid fa-quote-right"></i>
+            </div>
+            <div class="news-slider mx-auto 2xl:w-[55%] xl:w-[63%] lg:w-[71%] md:w-[79%] sm:w-[87%] xs:w-[95%] h-[200px] mt-[20px] flex flex-row justify-center items-center">
+                <div class="w-[10%] h-[100%] leading-[150px] text-[70px] text-[#e2e2e2] text-center xs:hidden sm:hidden">
+                    <i class="fa-solid fa-chevron-right cursor-pointer hover:text-[#c4c4c4] news-right"></i>
+                </div>
+                <div class="news-content-container w-[80%] sm:w-[100%] xs:w-[100%] h-[100%] relative overflow-hidden">
+                    <div class="news-content-slider w-[300%] h-[100%] absolute right-0 text-center text-[14px] sm:text-[13px] xs:text-[12px]">
+                        <div class="news-content w-1/3 h-[100%] float-right">
+                            <p>1402/4/21</p>
+                            <a href="#" class="font-bold text-decoration-none text-[black] text-[16px] hover:text-[#902070]">بازدید وزرای ارتباطات ایران و کشورهای عضو اکو از غرفه رایتل</a>
+                            <p class="mt-[20px]">
+                                عیسی زارع‌پور وزیر ارتباطات و فناوری اطلاعات ایران و وزرای ارتباطات کشورهای عضو سازمان همکاری منطقه‌ای اکو از غرفه شرکت خدمات ارتباطی رایتل، در حاشیه سومین اجلاس وزرای ارتباطات، بازدید کردند.
+                                </p>
+                        </div>
+                        <div class="news-content w-1/3 h-[100%] float-right">
+                            <p>1402/4/21</p>
+                            <a href="#" class="font-bold text-decoration-none text-[black] text-[16px] hover:text-[#902070]">حضور رایتل در سومین اجلاس وزرای ارتباطات اکو</a>
+                            <p class="mt-[20px]">
+                                سومین اجلاس وزرای ارتباطات و فناوری اطلاعات کشورهای عضو سازمان اکو به میزبانی وزارت ارتباطات جمهوری اسلامی ایران صبح امروز در هتل اسپیناس پالاس افتتاح شد.
+                                </p>
+                        </div>
+                        <div class="news-content w-1/3 h-[100%] float-right">
+                            <p>1402/4/6</p>
+                            <a href="#" class="font-bold text-decoration-none text-[black] text-[16px] hover:text-[#902070]">بهره‌مندی از ظرفیت رایتل در ارائه خدمات به بیمه‌شدگان</a>
+                            <p class="mt-[20px]">
+                                میرهاشم موسوی با حضور در غرفه شرکت خدمات ارتباطی رایتل در بیست و ششمین نمایشگاه الکامپ از خدمات و دستاوردهای این اپراتور در حوزه‌های مختلف فناوری‌های ارتباطی و هوشمندسازی بازدید کرد و بهره‌مندی از ظرفیت رایتل را در راستای سهولت ارائه خدمات به بیمه‌شدگان مفید و موثر برشمرد.
+                                </p>
+                        </div>
+                    </div>
+                    <div class="news-content-pagination hidden xs:flex sm:flex justify-between w-[60px] h-[20px] absolute top-[calc(100%-20px)] right-[calc(50%-30px)]">
+                        <button class="news-pagination"></button>
+                        <button class="news-pagination"></button>
+                        <button class="news-pagination"></button>
+                    </div>
+                </div>
+                <div class="w-[10%] h-[100%] leading-[150px] text-[70px] text-[#e2e2e2] text-center xs:hidden sm:hidden">
+                    <i class="fa-solid fa-chevron-left cursor-pointer hover:text-[#c4c4c4] news-left"></i>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--Start footer-->
+    <footer>
+        <!--Start footer menu section-->
+        <section class="footer-menu w-[100%] bg-[#e7e7e8] py-[60px]">
+            <div class="row 2xl:w-[75%] xl:w-[85%] lg:w-[80%] md:w-[75%] w-[95%] mx-auto">
+                <div class="footer-menu-column col-lg-3 col-md-6 d-md-block d-none">
+                    <p>محصولات و خدمات</p>
+                    <a href="#">خرید بسته اینترنتی</a>
+                    <a href="#">خرید شارژ</a>
+                    <a href="#">تبدیل سیم‌کارت</a>
+                    <a href="#">کد‌های دستوری</a>
+                    <a href="#">خرید و ثبت نام سیم‌کارت</a>
+                    <a href="#">تعرفه ها</a>
+                    <a href="#">خدمات سازمانی</a>
+                </div>
+                <div class="footer-menu-column col-lg-3 col-md-6 d-md-block d-none">
+                    <p>دسترسی کوتاه</p>
+                    <a href="#">ورود به سامانه رایتل من</a>
+                    <a href="#">استعلام وضعیت سیم کارت</a>
+                    <a href="#">راهنمای تنظیمات</a>
+                    <a href="#">پرسش های متداول</a>
+                    <a href="#">نقشه سایت</a>
+                    <a href="#">رهگیری مرسوله پستی</a>
+                    <a href="#">ارتباط با تامین کنندگان</a>
+                </div>
+                <div class="footer-menu-column col-lg-3 col-md-6 d-md-block d-none">
+                    <p>درگاه های مرتبط</p>
+                    <a href="#">سامانه خبری حراست شرکت  سرمایه گذاری تامین اجتماعی</a>
+                    <a href="#">سامانه اخبار و گزارشات حراست رایتل</a>
+                    <a href="#">سازمان تنظیم مقررات و ارتباطات رادیویی</a>
+                    <a href="#">استعلام تعداد خطوط مشترکین</a>
+                    <a href="#">سازمان تامین اجتماعی</a>
+                    <a href="#">پایگاه دولت همراه</a>
+                    <a href="#">سامانه دسترسی آزاد به اطلاعات</a>
+                </div>
+                <div class="footer-menu-column col-lg-3 col-md-6 d-block col-12">
+                    <a href="#" class="hidden-link">خرید بسته اینترنتی</a>
+                    <a href="#" class="hidden-link">رایتل من</a>
+                    <a href="#" class="hidden-link">کد های دستوری</a>
+                    <a href="#" class="hidden-link">خرید سیم کارت</a>
+                    <a href="#" class="hidden-link">خرید شارژ</a>
+                    <a href="#" class="hidden-link">درگاه های مرتبط</a>
+                    <a href="#" class="hidden-link">تماس با ما</a>
+                    <p class="small-hidden">تماس با ما</p>
+                    <a href="#" class="small-hidden">تماس از خطوط رایتلی: 200</a>
+                    <a href="#" class="small-hidden">تماس از سایر خطوط: 09202000000</a>
+                    <a href="#" class="small-hidden">فروشگاه های رایتل</a>
+                    <a href="#" class="small-hidden">نمایندگان فروش و خدمات</a>
+                    <div class="w-[100%] sm:w-[40%] xs:w-[60%] h-auto row">
+                        <img class="col-xl-6 col-lg-9 col-md-6 col-6 cursor-pointer" src="./images/33.png" alt="enamad">
+                        <img class="col-xl-6 col-lg-9 col-md-6 col-6 cursor-pointer" src="./images/32.png" alt="call">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Start social media section-->
+        <section class="social-media bg-[#f9f8f8] py-[50px] 2xl:pr-[14%] xl:pr-[7%] lg:pr-[14%] md:pr-[14%] h-[140px]">
+            <div class="social-media-content">
+                <div class="social-media-text font-['web'] text-[13px] float-right xs:hidden sm:hidden">
+                    <p>به ما بپیوندید در :</p>
+                </div>
+                <div class="social-media-symbols float-right mr-[10px] h-[37px] overflow-hidden flex flex-row justify-center xs:gap-[10px] sm:gap-[7px] gap-[5px]">
+                    <a href="#" class="social-media-link" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover" data-bs-trigger="hover">
+                        <img src="./images/38.png" alt="news">
+                    </a>
+                    <a href="#" class="social-media-link">
+                        <img src="./images/37.png" alt="aparat">
+                    </a>
+                    <a href="#" class="social-media-link">
+                        <img src="./images/36.png" alt="instagram">
+                    </a>
+                    <a href="#" class="social-media-link">
+                        <img src="./images/35.png" alt="twitter">
+                    </a>
+                    <a href="#" class="social-media-link">
+                        <img src="./images/34.png" alt="linkedIn">
+                    </a>
+                    <a href="#" class="social-media-link">
+                        <img src="./images/41.png" alt="soroush">
+                    </a>
+                    <a href="#" class="social-media-link">
+                        <img src="./images/40.png" alt="rubika">
+                    </a>
+                    <a href="#" class="social-media-link">
+                        <img src="./images/39.png" alt="gap">
+                    </a>
+                    <a href="#" class="social-media-link">
+                        <img src="./images/42.png" alt="virasti">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--Start copyright section-->
+        <section class="copyright-section bg-[#333333] text-[white] text-center font-['web'] w-[100%] 2xl:h-[70px] 2xl:leading-[70px] xl:h-[65px] xl:leading-[65px] lg:h-[60px] lg:leading-[60px] md:h-[55px] md:leading-[55px] text-[12px] sm:hidden xs:hidden">
+            <p class="copyright-content">
+                &copy;  برند رایتل به عنوان یک نام و علامت تجاری ثبت شده است. کلیه حقوق این وب سایت برای رایتل محفوظ است.
+            </p>
+        </section>
+    </footer>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

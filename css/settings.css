@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+@font-face {
+    font-family: regular;
+    src: url(../fonts/fa-regular-400.woff2);
+}
+
+@font-face {
+    font-family: solidFont;
+    src: url(../fonts/fa-solid-900.woff2);
+}
+
+@font-face {
+    font-family: boldFont;
+    src: url(../fonts/IRANSans-Bold-web.woff);
+}
+
+@font-face {
+    font-family: web;
+    src: url(../fonts/IRANSans-web.woff);
+}

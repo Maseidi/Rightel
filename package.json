@@ -1,0 +1,27 @@
+{
+  "name": "rightel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "2xl": "node-sass -w scss/2xl -o css/2xl --output-style compressed",
+    "xl": "node-sass -w scss/xl -o css/xl --output-style compressed",
+    "lg": "node-sass -w scss/lg -o css/lg --output-style compressed",
+    "md": "node-sass -w scss/md -o css/md --output-style compressed",
+    "sm": "node-sass -w scss/sm -o css/sm --output-style compressed",
+    "xs": "node-sass -w scss/xs -o css/xs --output-style compressed",
+    "tailwind": "npx tailwindcss -i ./tailwind/input.css -o ./css/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.0",
+    "live-server": "^1.2.2",
+    "node-sass": "^9.0.0",
+    "swiper": "^10.0.4"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
