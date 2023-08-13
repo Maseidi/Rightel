@@ -377,6 +377,10 @@ for ( let i = 0; i < small_menu_title.length; i++ ) {
       options[j] = false;
       small_menu_options[j].style.display = `none`;
     }
+    for ( let j = 0; j < chevrons2.length; j++ ) {
+      chevrons2[j].classList.remove("fa-chevron-down");
+      chevrons2[j].classList.add("fa-chevron-left");
+    }
     let newVar = subtitles[i];
     subtitles[i] = !newVar;
     if ( subtitles[i] ) {
